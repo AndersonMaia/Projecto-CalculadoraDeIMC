@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora de Índice de Massa Corporal</h1>
+      <h3>Insira seus dados abaixo</h3>
+    </header>
+    <main>
+      <div class="inputs">
+        <input type="number" class="input weight-input" placeholder="Peso" />
+        <input type="number" class="input height-input" placeholder="Altura" />
+        <button class="calculate">Calcular</button>
+      </div>
+    </main>
+    <div class="result hidden">This is the result</div>
+    <div class="general-info">
+      <p>
+        O IMC (Índice de Massa Corporal) é uma medida internacional usada para
+        avaliar o peso ideal. Seu cálculo é feito dividindo-se o peso (em kg)
+        pela altura (em m) ao quadrado. O resultado sugere se você está em uma
+        faixa considerada saudável ou não. Caso esteja acima ou abaixo,
+        recomenda-se a procura por profissional habilitado para melhor
+        acompanhamento.
+      </p>
+      <table>
+        <tr class="first-table-line">
+          <td>IMC</td>
+          <td>Classificação</td>
+        </tr>
+        <tr>
+          <td>< 16</td>
+          <td>Magreza Grau III</td>
+        </tr>
+        <tr>
+          <td>16 a 16,9</td>
+          <td>Magreza Grau II</td>
+        </tr>
+        <tr>
+          <td>17 a 18,4</td>
+          <td>Magreza Grau I</td>
+        </tr>
+        <tr>
+          <td>18,5 a 24,9</td>
+          <td>Eutrofia (Peso Normal)</td>
+        </tr>
+        <tr>
+          <td>25 a 29,9</td>
+          <td>Pré-Obesidade</td>
+        </tr>
+        <tr>
+          <td>30 a 34,9</td>
+          <td>Obesidade Moderada (Grau I)</td>
+        </tr>
+        <tr>
+          <td>35 a 39,9</td>
+          <td>Obesidade Severa (Grau II)</td>
+        </tr>
+        <tr>
+          <td class="no-border">>= 40</td>
+          <td class="no-border">Obesidade Muito Severa (Grau III)</td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
